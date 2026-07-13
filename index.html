@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>baby febu // $bebu — ASCII TERMINAL</title>
-  <meta name="description" content="baby febu · $bebu on Solana. Going live on PumpFun, DEX at 16K." />
+  <title>febu wukong // $febukong — ASCII TERMINAL</title>
+  <meta name="description" content="febu wukong is a fearless meme legend, blending monkey king power, wild energy, and unstoppable Solana vibes. $febukong on Solana." />
   <link rel="icon" href="logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0b0f0c;
-      --panel: #0e1510;
-      --panel-2: #121a14;
-      --border: #1f3d28;
-      --green: #39ff6a;
-      --green-dim: #1fa84a;
-      --green-soft: #7dff9e;
-      --green-ghost: rgba(57, 255, 106, 0.12);
-      --amber: #ffcc44;
-      --amber-dim: #b8860b;
-      --muted: #5a7a62;
-      --text: #c8e6cf;
-      --white: #e8ffe9;
+      --bg: #0c0a08;
+      --panel: #14100c;
+      --panel-2: #1a1410;
+      --border: #3d2e1a;
+      --green: #f0c96e;
+      --green-dim: #b8860b;
+      --green-soft: #ffe5a0;
+      --green-ghost: rgba(240, 201, 110, 0.12);
+      --amber: #e87830;
+      --amber-dim: #c45c26;
+      --muted: #8a7355;
+      --text: #e8d5b5;
+      --white: #fff4dc;
       --red: #ff5a5a;
       --font: "IBM Plex Mono", "Share Tech Mono", ui-monospace, Consolas, monospace;
     }
@@ -41,10 +41,11 @@
       font-size: 15px;
       line-height: 1.55;
       background-image:
-        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(57,255,106,0.07), transparent 55%),
-        linear-gradient(rgba(57,255,106,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(57,255,106,0.03) 1px, transparent 1px);
-      background-size: 100% 100%, 24px 24px, 24px 24px;
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(232,120,48,0.08), transparent 55%),
+        radial-gradient(ellipse 50% 40% at 80% 60%, rgba(240,201,110,0.04), transparent 50%),
+        linear-gradient(rgba(240,201,110,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(240,201,110,0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 24px 24px, 24px 24px;
     }
 
     /* phosphor scan */
@@ -73,7 +74,7 @@
     }
 
     a { color: var(--green); text-decoration: none; }
-    a:hover { color: var(--green-soft); text-shadow: 0 0 8px rgba(57,255,106,0.5); }
+    a:hover { color: var(--green-soft); text-shadow: 0 0 8px rgba(240,201,110,0.5); }
     ::selection { background: var(--green); color: var(--bg); }
 
     .wrap {
@@ -112,7 +113,7 @@
       color: var(--green);
       line-height: 1.15;
       font-size: 0.72rem;
-      text-shadow: 0 0 6px rgba(57,255,106,0.25);
+      text-shadow: 0 0 6px rgba(240,201,110,0.25);
     }
     @media (min-width: 640px) {
       pre.ascii { font-size: 0.85rem; }
@@ -143,14 +144,14 @@
       width: 40px;
       height: 40px;
       image-rendering: pixelated;
-      filter: drop-shadow(0 0 6px rgba(57,255,106,0.4));
+      filter: drop-shadow(0 0 6px rgba(240,201,110,0.45));
     }
     .brand-name {
       color: var(--green);
       font-weight: 700;
       letter-spacing: 0.14em;
       font-size: 0.95rem;
-      text-shadow: 0 0 10px rgba(57,255,106,0.35);
+      text-shadow: 0 0 10px rgba(240,201,110,0.35);
     }
     .brand-sub {
       color: var(--muted);
@@ -180,24 +181,24 @@
       width: 28px;
       height: 28px;
       transition: transform 0.15s, filter 0.15s;
-      filter: brightness(0) invert(0.7) sepia(1) saturate(5) hue-rotate(75deg);
+      filter: brightness(0) invert(0.75) sepia(1) saturate(4) hue-rotate(5deg);
     }
     .socials a:hover img {
       transform: scale(1.1);
-      filter: brightness(0) invert(0.85) sepia(1) saturate(6) hue-rotate(75deg) drop-shadow(0 0 6px rgba(57,255,106,0.6));
+      filter: brightness(0) invert(0.9) sepia(1) saturate(5) hue-rotate(5deg) drop-shadow(0 0 6px rgba(240,201,110,0.6));
     }
     .socials .tg {
       filter: none !important;
     }
     .socials a:hover .tg {
-      filter: drop-shadow(0 0 6px rgba(57,255,106,0.5)) !important;
+      filter: drop-shadow(0 0 6px rgba(240,201,110,0.5)) !important;
     }
 
     /* marquee */
     .ticker {
       overflow: hidden;
       border: 1px solid var(--border);
-      background: #0a120c;
+      background: #0a0806;
       margin-bottom: 1.25rem;
       font-size: 0.78rem;
       letter-spacing: 0.12em;
@@ -243,7 +244,7 @@
       text-align: center;
       padding: 0.75rem;
       border: 1px dashed var(--border);
-      background: #080c09;
+      background: #080604;
       margin-bottom: 1rem;
     }
     .hero-banner img {
@@ -251,7 +252,7 @@
       max-width: 720px;
       display: block;
       margin: 0 auto;
-      filter: drop-shadow(0 0 16px rgba(57,255,106,0.2));
+      filter: drop-shadow(0 0 16px rgba(240,201,110,0.25));
       animation: float 5s ease-in-out infinite;
     }
     @keyframes float {
@@ -283,14 +284,14 @@
       font-size: clamp(1.4rem, 4vw, 2rem);
       letter-spacing: 0.22em;
       margin: 1rem 0 0.35rem;
-      text-shadow: 0 0 18px rgba(57,255,106,0.4);
+      text-shadow: 0 0 18px rgba(240,201,110,0.4);
       font-weight: 700;
     }
     .tagline {
       text-align: center;
       color: var(--text);
       font-size: clamp(0.95rem, 2.5vw, 1.1rem);
-      max-width: 34rem;
+      max-width: 38rem;
       margin: 0.75rem auto 0;
       line-height: 1.6;
     }
@@ -320,14 +321,14 @@
     }
     .pill.amber {
       color: var(--amber);
-      border-color: rgba(255,204,68,0.35);
+      border-color: rgba(232,120,48,0.4);
     }
 
     /* CA */
     .ca-block {
       margin-top: 1.25rem;
       border: 1px solid var(--border);
-      background: #080c09;
+      background: #080604;
     }
     .ca-head {
       display: flex;
@@ -377,14 +378,14 @@
     .btn:hover {
       background: var(--green);
       color: var(--bg);
-      box-shadow: 0 0 18px rgba(57,255,106,0.35);
+      box-shadow: 0 0 18px rgba(240,201,110,0.35);
       border-color: var(--green);
     }
     .btn-solid {
       background: var(--green);
       color: var(--bg);
       border-color: var(--green);
-      box-shadow: 0 0 14px rgba(57,255,106,0.25);
+      box-shadow: 0 0 14px rgba(240,201,110,0.25);
     }
     .btn-solid:hover {
       background: var(--green-soft);
@@ -425,13 +426,13 @@
       color: var(--green);
       font-size: 1.15rem;
       letter-spacing: 0.16em;
-      text-shadow: 0 0 10px rgba(57,255,106,0.3);
+      text-shadow: 0 0 10px rgba(240,201,110,0.3);
     }
     .sec p.lead {
       color: var(--muted);
       margin-top: 0.45rem;
       font-size: 0.92rem;
-      max-width: 36rem;
+      max-width: 38rem;
     }
 
     /* grid cards as ascii panels */
@@ -456,7 +457,7 @@
     }
     .card:hover {
       border-color: var(--green-dim);
-      box-shadow: 0 0 20px rgba(57,255,106,0.08);
+      box-shadow: 0 0 20px rgba(240,201,110,0.1);
     }
     .card pre {
       color: var(--green-dim);
@@ -483,7 +484,7 @@
       line-height: 1;
       float: right;
       margin-left: 0.5rem;
-      color: rgba(57,255,106,0.15);
+      color: rgba(240,201,110,0.18);
     }
 
     /* chart */
@@ -530,7 +531,7 @@
     }
     .link-card:hover {
       border-color: var(--green-dim);
-      box-shadow: 0 0 18px rgba(57,255,106,0.1);
+      box-shadow: 0 0 18px rgba(240,201,110,0.12);
       color: inherit;
       text-shadow: none;
     }
@@ -542,7 +543,7 @@
     .link-card .x-ico {
       width: 40px;
       height: 40px;
-      filter: brightness(0) invert(0.7) sepia(1) saturate(5) hue-rotate(75deg);
+      filter: brightness(0) invert(0.75) sepia(1) saturate(4) hue-rotate(5deg);
     }
     .link-card .lbl {
       font-size: 0.68rem;
@@ -582,7 +583,7 @@
     footer .foot-brand img {
       width: 32px;
       height: 32px;
-      filter: drop-shadow(0 0 4px rgba(57,255,106,0.35));
+      filter: drop-shadow(0 0 4px rgba(240,201,110,0.4));
     }
     footer .foot-name { color: var(--green); font-weight: 600; }
     footer .foot-links {
@@ -595,7 +596,7 @@
     footer .foot-links img {
       width: 22px;
       height: 22px;
-      filter: brightness(0) invert(0.55) sepia(1) saturate(4) hue-rotate(75deg);
+      filter: brightness(0) invert(0.55) sepia(1) saturate(4) hue-rotate(5deg);
       vertical-align: middle;
     }
     footer .foot-links .tg { filter: none; width: 24px; height: 24px; }
@@ -616,7 +617,7 @@
       font-weight: 700;
       letter-spacing: 0.16em;
       padding: 0.55rem 1rem;
-      box-shadow: 0 0 20px rgba(57,255,106,0.4);
+      box-shadow: 0 0 20px rgba(240,201,110,0.4);
     }
     #toast.show { display: block; animation: toastIn 0.2s ease; }
     @keyframes toastIn {
@@ -628,8 +629,8 @@
     .term-frame {
       border: 2px solid var(--border);
       box-shadow:
-        0 0 0 1px #0a0f0b,
-        0 0 40px rgba(57,255,106,0.06),
+        0 0 0 1px #0a0806,
+        0 0 40px rgba(232,120,48,0.08),
         inset 0 0 60px rgba(0,0,0,0.35);
       background: var(--bg);
     }
@@ -673,10 +674,10 @@
     <!-- sticky mini nav -->
     <div class="topbar">
       <a href="#top" class="brand">
-        <img src="logo.png" alt="baby febu" />
+        <img src="logo.png" alt="febu wukong" />
         <div>
-          <div class="brand-name">baby febu</div>
-          <div class="brand-sub">$bebu // SOL</div>
+          <div class="brand-name">febu wukong</div>
+          <div class="brand-sub">$febukong // SOL</div>
         </div>
       </a>
       <nav class="nav">
@@ -686,16 +687,16 @@
         <span class="sep">|</span>
         <a href="#chart">CHART</a>
         <span class="sep">|</span>
-        <a href="#pod">POD</a>
+        <a href="#troop">TROOP</a>
       </nav>
       <div class="socials">
-        <a href="https://t.me/babyfebusol" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+        <a href="https://t.me/febuwukong" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
           <img src="tg.png" alt="TG" class="tg" />
         </a>
-        <a href="https://x.com/babyfebusol" target="_blank" rel="noopener noreferrer" aria-label="X">
+        <a href="https://x.com/febuwukong" target="_blank" rel="noopener noreferrer" aria-label="X">
           <img src="x.png" alt="X" />
         </a>
-        <a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=Bu3hbyUd9qgDWv4vrrKDk3mWR8LDcs7tiZrmjRrzpump" target="_blank" rel="noopener noreferrer" class="btn btn-solid" style="padding:0.4rem 0.7rem;font-size:0.7rem;">BUY</a>
+        <a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA" target="_blank" rel="noopener noreferrer" class="btn btn-solid" style="padding:0.4rem 0.7rem;font-size:0.7rem;">BUY</a>
       </div>
     </div>
 
@@ -707,7 +708,7 @@
           <span class="dot"></span>
           <span class="dot on"></span>
         </div>
-        <span>babyfebu.sys — tty1</span>
+        <span>febuwukong.sys — tty1</span>
         <span class="ok" style="color:var(--green)">ONLINE</span>
       </div>
 
@@ -715,58 +716,59 @@
         <!-- ticker -->
         <div class="ticker">
           <div class="ticker-track">
-            <span>>>> baby febu >>> $bebu >>> GOING LIVE ON PUMPFUN >>> DEX AT 16K >>> SOLANA >>> baby febu >>> $bebu >>> GOING LIVE ON PUMPFUN >>> DEX AT 16K >>> SOLANA >>></span>
-            <span>>>> baby febu >>> $bebu >>> GOING LIVE ON PUMPFUN >>> DEX AT 16K >>> SOLANA >>> baby febu >>> $bebu >>> GOING LIVE ON PUMPFUN >>> DEX AT 16K >>> SOLANA >>></span>
+            <span>>>> febu wukong >>> $febukong >>> MONKEY KING POWER >>> WILD ENERGY >>> SOLANA VIBES >>> FEARLESS MEME LEGEND >>> febu wukong >>> $febukong >>> MONKEY KING POWER >>> WILD ENERGY >>> SOLANA VIBES >>></span>
+            <span>>>> febu wukong >>> $febukong >>> MONKEY KING POWER >>> WILD ENERGY >>> SOLANA VIBES >>> FEARLESS MEME LEGEND >>> febu wukong >>> $febukong >>> MONKEY KING POWER >>> WILD ENERGY >>> SOLANA VIBES >>></span>
           </div>
         </div>
 
         <p class="prompt">
-          <span class="path">root@bebu</span>:<span style="color:var(--green-soft)">~</span>$ <span class="cmd">./boot --token bebu</span><span class="cursor"></span>
+          <span class="path">root@febukong</span>:<span style="color:var(--green-soft)">~</span>$ <span class="cmd">./boot --token febukong --mode monkeyking</span><span class="cursor"></span>
         </p>
 
         <!-- big ascii title -->
         <pre class="ascii" aria-hidden="true">
  ╔══════════════════════════════════════════════════════════════╗
  ║                                                              ║
- ║   bbbb    aaa  bbbb  y   y     fffff eeeee bbbb  u   u      ║
- ║   b   b  a   a b   b  y y      f     e     b   b u   u      ║
- ║   bbbb   aaaaa bbbb    y       fff   eeee  bbbb  u   u      ║
- ║   b   b  a   a b   b   y       f     e     b   b u   u      ║
- ║   bbbb   a   a bbbb    y       f     eeeee bbbb   uuu       ║
+ ║  fffff eeeee bbbb  u   u     w   w u   u k  k  oooo  nnnn   ║
+ ║  f     e     b   b u   u     w   w u   u k k  o    o n  n   ║
+ ║  fff   eeee  bbbb  u   u     w w w u   u kk   o    o n  n   ║
+ ║  f     e     b   b u   u     ww ww u   u k k  o    o n  n   ║
+ ║  f     eeeee bbbb   uuu      w   w  uuu  k  k  oooo  n  n   ║
  ║                                                              ║
- ║              name: baby febu                                 ║
- ║            symbol: $bebu                                     ║
+ ║              name: febu wukong                               ║
+ ║            symbol: $febukong                                 ║
  ║                                                              ║
- ║         [ $bebu ]  ·  solana  ·  pumpfun → dex 16k           ║
+ ║     [ $febukong ]  ·  monkey king  ·  solana meme legend     ║
  ╚══════════════════════════════════════════════════════════════╝
         </pre>
 
         <!-- banner art -->
         <div class="box" style="margin-top:1rem;">
-          <span class="box-title">[ BANNER.IMG ]</span>
+          <span class="box-title">[ MONKEY_KING.IMG ]</span>
           <div class="box-inner">
             <div class="hero-banner">
-              <img src="banner.png" alt="baby febu army banner" draggable="false" />
+              <img src="banner.png" alt="febu wukong — monkey king banner" draggable="false" />
             </div>
             <div class="meta-row">
-              <span class="live">PUMPFUN</span>
+              <span class="live">LEGEND ONLINE</span>
               <span>CHAIN: SOLANA</span>
-              <span>TICKER: $bebu</span>
-              <span>TARGET: DEX @ 16K</span>
+              <span>TICKER: $febukong</span>
+              <span>THEME: MONKEY KING</span>
             </div>
           </div>
         </div>
 
-        <h1>baby febu</h1>
-        <p class="symbol">symbol <b>$bebu</b></p>
+        <h1>febu wukong</h1>
+        <p class="symbol">symbol <b>$febukong</b></p>
         <p class="tagline">
-          baby febu · $bebu. Going live on PumpFun, DEX at 16K.
+          febu wukong is a fearless meme legend, blending monkey king power, wild energy, and unstoppable Solana vibes.
         </p>
 
         <div class="pills">
-          <span class="pill">LAUNCH :: PUMPFUN</span>
-          <span class="pill amber">DEX :: 16K MC</span>
+          <span class="pill">MONKEY :: KING</span>
+          <span class="pill amber">MEME :: LEGEND</span>
           <span class="pill">CHAIN :: SOLANA</span>
+          <span class="pill amber">VIBES :: WILD</span>
         </div>
 
         <!-- CA -->
@@ -776,16 +778,16 @@
             <span>ONLY TRADE THE REAL CA</span>
           </div>
           <div class="ca-body">
-            <code id="ca-text">Bu3hbyUd9qgDWv4vrrKDk3mWR8LDcs7tiZrmjRrzpump</code>
+            <code id="ca-text">TBA</code>
             <button type="button" class="btn btn-solid" id="copy-ca">[ COPY CA ]</button>
           </div>
         </div>
 
         <div class="cta-row">
-          <a class="btn btn-solid" href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=Bu3hbyUd9qgDWv4vrrKDk3mWR8LDcs7tiZrmjRrzpump" target="_blank" rel="noopener noreferrer">
-            &gt; BUY ON PUMPFUN
+          <a class="btn btn-solid" href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA" target="_blank" rel="noopener noreferrer">
+            &gt; BUY $febukong
           </a>
-          <a class="btn btn-ghost" href="https://dexscreener.com/solana/Bu3hbyUd9qgDWv4vrrKDk3mWR8LDcs7tiZrmjRrzpump" target="_blank" rel="noopener noreferrer">
+          <a class="btn btn-ghost" href="https://dexscreener.com/solana/TBA" target="_blank" rel="noopener noreferrer">
             &gt; WATCH CHART
           </a>
         </div>
@@ -794,46 +796,46 @@
 
         <!-- ABOUT -->
         <section class="sec" id="about">
-          <p class="sec-label">01 // MANIFEST</p>
-          <h2>&gt; WHAT IS baby febu?</h2>
+          <p class="sec-label">01 // LEGEND</p>
+          <h2>&gt; WHAT IS febu wukong?</h2>
           <p class="lead">
-            baby febu on Solana. Ticker $bebu.
-            Live on PumpFun — graduate to DEX when we hit 16K.
+            febu wukong is a fearless meme legend, blending monkey king power, wild energy, and unstoppable Solana vibes.
+            Ticker <b style="color:var(--amber)">$febukong</b> — staff raised, headband tight, chaos unlocked.
           </p>
         </section>
 
         <div class="grid cols-4">
           <article class="card">
-            <pre>  baby
-  febu
-  $bebu</pre>
-            <h3>BABY FEBU</h3>
-            <p>baby febu energy. One culture, one army, one mission on Solana.</p>
+            <pre>  ( o.o )
+   /|──|\
+    /  \
+  KING</pre>
+            <h3>MONKEY KING</h3>
+            <p>Classic Wukong swagger. Fearless, chaotic, and born to break every candle ceiling.</p>
           </article>
           <article class="card">
-            <pre>  ┌────┐
-  │PUMP│
-  │.FUN│
-  └────┘
-  LIVE*</pre>
-            <h3>LIVE ON PUMPFUN</h3>
-            <p>Bond-curve heat from candle one. Early pod, full swarm, no waiting room.</p>
+            <pre>  ⚡ MEME
+  ⚡ POWER
+  ⚡ MODE
+  ON</pre>
+            <h3>FEARLESS MEME</h3>
+            <p>A legend that does not flinch. Pure meme force with monkey king attitude.</p>
           </article>
           <article class="card">
-            <pre>  16K
-  MC ──►
-  DEX
-  OPEN</pre>
-            <h3>DEX AT 16K</h3>
-            <p>Hit 16K market cap — graduate to open water. Liquidity deepens. Chart unlocks.</p>
+            <pre>  ~~~
+  WILD
+  ~~~
+  ENERGY</pre>
+            <h3>WILD ENERGY</h3>
+            <p>Unfiltered hype. Loud troop. Infinite staff spin energy on every pump.</p>
           </article>
           <article class="card">
             <pre>  ╱||╲
  ╱ || ╲
   SOL
   ~~~</pre>
-            <h3>SOLANA NATIVE</h3>
-            <p>Built for Solana speed. Fast swaps, loud pod, pure $bebu signal.</p>
+            <h3>SOLANA VIBES</h3>
+            <p>Built for Solana speed. Fast swaps, loud culture, unstoppable $febukong signal.</p>
           </article>
         </div>
 
@@ -841,9 +843,9 @@
 
         <!-- HOW TO BUY -->
         <section class="sec" id="buy">
-          <p class="sec-label">02 // PROTOCOL</p>
-          <h2>&gt; HOW TO BUY $bebu</h2>
-          <p class="lead">Four commands. Surface with the pod before DEX at 16K.</p>
+          <p class="sec-label">02 // QUEST</p>
+          <h2>&gt; HOW TO BUY $febukong</h2>
+          <p class="lead">Four steps. Claim your staff. Join the monkey king legend on Solana.</p>
         </section>
 
         <div class="grid cols-4">
@@ -851,31 +853,31 @@
             <span class="step-num">01</span>
             <pre>$ wallet init</pre>
             <h3>GET A WALLET</h3>
-            <p>Install Phantom or Solflare. Create or import. Guard the seed like deep treasure.</p>
+            <p>Install Phantom or Solflare. Create or import. Guard the seed like the king's peaches.</p>
           </article>
           <article class="card">
             <span class="step-num">02</span>
             <pre>$ sol deposit</pre>
             <h3>ADD SOL</h3>
-            <p>Buy SOL, send it to your wallet. Leave gas for fees — fuel for the swap.</p>
+            <p>Buy SOL, send it to your wallet. Leave gas for fees — fuel for the quest.</p>
           </article>
           <article class="card">
             <span class="step-num">03</span>
             <pre>$ ca copy</pre>
             <h3>COPY CA</h3>
-            <p>Hit COPY CA. Paste the real contract — only trade verified $bebu.</p>
+            <p>Hit COPY CA. Paste the real contract — only trade verified $febukong.</p>
           </article>
           <article class="card">
             <span class="step-num">04</span>
-            <pre>$ swap --pump</pre>
-            <h3>SWAP → SURF</h3>
-            <p>Open BUY ON PUMPFUN, connect, swap SOL for $bebu. Confirm. Ride to 16K.</p>
+            <pre>$ swap --king</pre>
+            <h3>SWAP → ASCEND</h3>
+            <p>Open BUY, connect wallet, swap SOL for $febukong. Confirm. Ride the legend.</p>
           </article>
         </div>
 
         <div class="cta-row">
-          <a class="btn btn-solid" href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=Bu3hbyUd9qgDWv4vrrKDk3mWR8LDcs7tiZrmjRrzpump" target="_blank" rel="noopener noreferrer">
-            &gt; BUY ON PUMPFUN
+          <a class="btn btn-solid" href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA" target="_blank" rel="noopener noreferrer">
+            &gt; BUY $febukong
           </a>
           <button type="button" class="btn btn-ghost" onclick="document.getElementById('copy-ca').click()">
             &gt; COPY CA
@@ -886,26 +888,26 @@
 
         <!-- CHART -->
         <section class="sec" id="chart">
-          <p class="sec-label">03 // DEPTH SCAN</p>
+          <p class="sec-label">03 // BATTLEFIELD</p>
           <h2>&gt; WATCH THE CHART</h2>
-          <p class="lead">Live $bebu action. PumpFun heat now. DEX opens at 16K.</p>
+          <p class="lead">Live $febukong action. Monkey king candles. Fearless Solana energy.</p>
         </section>
 
         <div style="display:flex;justify-content:flex-end;margin-bottom:0.65rem;">
-          <a class="btn btn-ghost" href="https://dexscreener.com/solana/Bu3hbyUd9qgDWv4vrrKDk3mWR8LDcs7tiZrmjRrzpump" target="_blank" rel="noopener noreferrer" style="font-size:0.72rem;padding:0.45rem 0.8rem;">
+          <a class="btn btn-ghost" href="https://dexscreener.com/solana/TBA" target="_blank" rel="noopener noreferrer" style="font-size:0.72rem;padding:0.45rem 0.8rem;">
             OPEN FULL CHART ^
           </a>
         </div>
 
         <div class="chart-shell">
           <div class="chart-bar">
-            <span class="ok">[ dexscreener · $bebu ]</span>
+            <span class="ok">[ dexscreener · $febukong ]</span>
             <span>● EMBED</span>
           </div>
           <div class="chart-frame">
             <iframe
-              title="baby febu Dexscreener chart"
-              src="https://dexscreener.com/solana/Bu3hbyUd9qgDWv4vrrKDk3mWR8LDcs7tiZrmjRrzpump?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
+              title="febu wukong Dexscreener chart"
+              src="https://dexscreener.com/solana/TBA?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
               allow="clipboard-write"
               loading="lazy"
             ></iframe>
@@ -914,80 +916,81 @@
 
         <div class="hr-ascii">════════════════════════════════════════════════════════════════════════</div>
 
-        <!-- POD -->
-        <section class="sec" id="pod">
-          <p class="sec-label">04 // NETWORK</p>
-          <h2>&gt; JOIN THE POD</h2>
-          <p class="lead">baby febu energy. Join the pod. Ride $bebu.</p>
+        <!-- TROOP -->
+        <section class="sec" id="troop">
+          <p class="sec-label">04 // TROOP</p>
+          <h2>&gt; JOIN THE TROOP</h2>
+          <p class="lead">Monkey king power. Wild energy. Unstoppable Solana vibes. Ride $febukong with the troop.</p>
         </section>
 
         <div class="grid cols-2">
-          <a class="link-card" href="https://t.me/babyfebusol" target="_blank" rel="noopener noreferrer">
+          <a class="link-card" href="https://t.me/febuwukong" target="_blank" rel="noopener noreferrer">
             <img src="tg.png" alt="Telegram" />
             <div>
               <div class="lbl">TELEGRAM</div>
-              <div class="val">t.me/babyfebusol</div>
-              <div class="hint">where the pod gathers →</div>
+              <div class="val">t.me/febuwukong</div>
+              <div class="hint">where the troop gathers →</div>
             </div>
           </a>
-          <a class="link-card" href="https://x.com/babyfebusol" target="_blank" rel="noopener noreferrer">
+          <a class="link-card" href="https://x.com/febuwukong" target="_blank" rel="noopener noreferrer">
             <img src="x.png" alt="X" class="x-ico" />
             <div>
               <div class="lbl">X / TWITTER</div>
-              <div class="val">@babyfebusol</div>
-              <div class="hint">charts · updates · waves →</div>
+              <div class="val">@febuwukong</div>
+              <div class="hint">charts · lore · chaos →</div>
             </div>
           </a>
         </div>
 
         <pre class="ascii" style="margin-top:1.5rem;text-align:left;">
 ┌──────────────────────────────────────────────┐
-│  baby febu // $bebu                          │
-│  name: baby febu · symbol: $bebu             │
-│  Going live on PumpFun · DEX at 16K          │
+│  febu wukong // $febukong                    │
+│  name: febu wukong · symbol: $febukong       │
+│  fearless meme legend · monkey king power    │
 │                                              │
 │  $ ./status                                  │
-│  > pumpfun: LIVE                             │
-│  > dex: PENDING @ 16K MC                     │
+│  > theme: MONKEY KING                        │
+│  > energy: WILD                              │
+│  > vibes: UNSTOPPABLE SOLANA                 │
 │  > chain: SOLANA                             │
 └──────────────────────────────────────────────┘
         </pre>
 
         <p class="prompt" style="margin-top:1rem;">
-          <span class="path">root@bebu</span>:<span style="color:var(--green-soft)">~</span>$ <span class="cmd">echo "NFA · DYOR · RIDE THE WAVE"</span><span class="cursor"></span>
+          <span class="path">root@febukong</span>:<span style="color:var(--green-soft)">~</span>$ <span class="cmd">echo "NFA · DYOR · STAFF UP"</span><span class="cursor"></span>
         </p>
       </div>
     </div>
 
     <footer>
       <div class="foot-brand">
-        <img src="logo.png" alt="baby febu" />
+        <img src="logo.png" alt="febu wukong" />
         <div>
-          <div class="foot-name">baby febu · $bebu</div>
-          <div>baby febu · $bebu · SOLANA</div>
+          <div class="foot-name">febu wukong · $febukong</div>
+          <div>monkey king · solana legend</div>
         </div>
-      </div> 
+      </div>
       <div class="foot-links">
-        <a href="https://t.me/babyfebusol" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+        <a href="https://t.me/febuwukong" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
           <img src="tg.png" alt="TG" class="tg" />
         </a>
-        <a href="https://x.com/babyfebusol" target="_blank" rel="noopener noreferrer" aria-label="X">
+        <a href="https://x.com/febuwukong" target="_blank" rel="noopener noreferrer" aria-label="X">
           <img src="x.png" alt="X" />
         </a>
-        <a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=Bu3hbyUd9qgDWv4vrrKDk3mWR8LDcs7tiZrmjRrzpump" target="_blank" rel="noopener noreferrer">BUY</a>
-        <a href="https://dexscreener.com/solana/Bu3hbyUd9qgDWv4vrrKDk3mWR8LDcs7tiZrmjRrzpump" target="_blank" rel="noopener noreferrer">CHART</a>
+        <a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA" target="_blank" rel="noopener noreferrer">BUY</a>
+        <a href="https://dexscreener.com/solana/TBA" target="_blank" rel="noopener noreferrer">CHART</a>
       </div>
       <div style="text-align:right;">
-        © 2026 baby febu · NFA · DYOR<br />
-        <span style="color:var(--green-dim)">// baby febu · $bebu · 16k</span>
+        © 2026 febu wukong · NFA · DYOR<br />
+        <span style="color:var(--green-dim)">// $febukong · monkey king · sol</span>
       </div>
-    </footer> 
+    </footer>
   </div>
 
   <div id="toast">CA COPIED *</div>
 
   <script>
-    const CA = 'Bu3hbyUd9qgDWv4vrrKDk3mWR8LDcs7tiZrmjRrzpump';
+    const CA = 'TBA';
     const caText = document.getElementById('ca-text');
     const copyBtn = document.getElementById('copy-ca');
     const toast = document.getElementById('toast');
