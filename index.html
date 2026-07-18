@@ -3,28 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>febu wukong // $febukong — ASCII TERMINAL</title>
-  <meta name="description" content="febu wukong is a fearless meme legend, blending monkey king power, wild energy, and unstoppable Solana vibes. $febukong on Solana." />
+  <title>Nyan Jimothy // $NYANJIM — ASCII TERMINAL</title>
+  <meta name="description" content="Ancient times would call it a myth. Modern times call it a meme. Everyone knows the name Jimothy. $NYANJIM on Solana." />
   <link rel="icon" href="logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0c0a08;
-      --panel: #14100c;
-      --panel-2: #1a1410;
-      --border: #3d2e1a;
-      --green: #f0c96e;
-      --green-dim: #b8860b;
-      --green-soft: #ffe5a0;
-      --green-ghost: rgba(240, 201, 110, 0.12);
-      --amber: #e87830;
-      --amber-dim: #c45c26;
-      --muted: #8a7355;
-      --text: #e8d5b5;
-      --white: #fff4dc;
-      --red: #ff5a5a;
+      /* Logo palette: deep navy + pink pop-tart + rainbow trail */
+      --bg: #06101f;
+      --panel: #0a1628;
+      --panel-2: #0e1c32;
+      --border: #243a5c;
+      --pink: #ff6bb5;
+      --pink-dim: #d94a96;
+      --pink-soft: #ff9ed0;
+      --pink-ghost: rgba(255, 107, 181, 0.14);
+      --cyan: #4ecbff;
+      --cyan-dim: #2a9fd4;
+      --muted: #6b87a8;
+      --text: #c8d8ec;
+      --white: #eef6ff;
+      --silver: #c0c8d4;
+      --rainbow-r: #ff3b3b;
+      --rainbow-o: #ff9a3c;
+      --rainbow-y: #ffe14a;
+      --rainbow-g: #3ddc84;
+      --rainbow-b: #3b82ff;
+      --rainbow-p: #b86bff;
       --font: "IBM Plex Mono", "Share Tech Mono", ui-monospace, Consolas, monospace;
     }
 
@@ -41,11 +48,12 @@
       font-size: 15px;
       line-height: 1.55;
       background-image:
-        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(232,120,48,0.08), transparent 55%),
-        radial-gradient(ellipse 50% 40% at 80% 60%, rgba(240,201,110,0.04), transparent 50%),
-        linear-gradient(rgba(240,201,110,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(240,201,110,0.03) 1px, transparent 1px);
-      background-size: 100% 100%, 100% 100%, 24px 24px, 24px 24px;
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 107, 181, 0.10), transparent 55%),
+        radial-gradient(ellipse 45% 40% at 85% 55%, rgba(78, 203, 255, 0.06), transparent 50%),
+        radial-gradient(ellipse 40% 35% at 15% 70%, rgba(184, 107, 255, 0.05), transparent 50%),
+        linear-gradient(rgba(255, 107, 181, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(78, 203, 255, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 24px 24px, 24px 24px;
     }
 
     /* phosphor scan */
@@ -59,10 +67,10 @@
         0deg,
         transparent,
         transparent 2px,
-        rgba(0,0,0,0.12) 2px,
-        rgba(0,0,0,0.12) 3px
+        rgba(0,0,0,0.14) 2px,
+        rgba(0,0,0,0.14) 3px
       );
-      opacity: 0.45;
+      opacity: 0.4;
     }
     body::after {
       content: '';
@@ -70,12 +78,12 @@
       position: fixed;
       inset: 0;
       z-index: 9999;
-      background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.55) 100%);
+      background: radial-gradient(ellipse at center, transparent 50%, rgba(2, 8, 18, 0.65) 100%);
     }
 
-    a { color: var(--green); text-decoration: none; }
-    a:hover { color: var(--green-soft); text-shadow: 0 0 8px rgba(240,201,110,0.5); }
-    ::selection { background: var(--green); color: var(--bg); }
+    a { color: var(--pink); text-decoration: none; }
+    a:hover { color: var(--pink-soft); text-shadow: 0 0 8px rgba(255, 107, 181, 0.55); }
+    ::selection { background: var(--pink); color: var(--bg); }
 
     .wrap {
       max-width: 920px;
@@ -99,21 +107,21 @@
       left: 0.85rem;
       background: var(--bg);
       padding: 0 0.5rem;
-      color: var(--green);
+      color: var(--pink);
       font-size: 0.72rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
     }
-    .box-title.amber { color: var(--amber); }
+    .box-title.cyan { color: var(--cyan); }
 
     pre.ascii {
       font-family: var(--font);
       white-space: pre;
       overflow-x: auto;
-      color: var(--green);
+      color: var(--pink);
       line-height: 1.15;
       font-size: 0.72rem;
-      text-shadow: 0 0 6px rgba(240,201,110,0.25);
+      text-shadow: 0 0 6px rgba(255, 107, 181, 0.3);
     }
     @media (min-width: 640px) {
       pre.ascii { font-size: 0.85rem; }
@@ -127,7 +135,7 @@
       justify-content: space-between;
       gap: 0.75rem;
       border: 1px solid var(--border);
-      background: var(--panel-2);
+      background: rgba(14, 28, 50, 0.92);
       padding: 0.65rem 0.9rem;
       margin-bottom: 1rem;
       position: sticky;
@@ -144,14 +152,15 @@
       width: 40px;
       height: 40px;
       image-rendering: pixelated;
-      filter: drop-shadow(0 0 6px rgba(240,201,110,0.45));
+      border-radius: 4px;
+      filter: drop-shadow(0 0 8px rgba(255, 107, 181, 0.45));
     }
     .brand-name {
-      color: var(--green);
+      color: var(--pink);
       font-weight: 700;
       letter-spacing: 0.14em;
       font-size: 0.95rem;
-      text-shadow: 0 0 10px rgba(240,201,110,0.35);
+      text-shadow: 0 0 10px rgba(255, 107, 181, 0.4);
     }
     .brand-sub {
       color: var(--muted);
@@ -169,7 +178,7 @@
       color: var(--muted);
       text-transform: uppercase;
     }
-    .nav a:hover { color: var(--green); }
+    .nav a:hover { color: var(--pink); }
     .nav .sep { color: var(--border); user-select: none; }
 
     .socials {
@@ -181,33 +190,33 @@
       width: 28px;
       height: 28px;
       transition: transform 0.15s, filter 0.15s;
-      filter: brightness(0) invert(0.75) sepia(1) saturate(4) hue-rotate(5deg);
+      filter: brightness(0) invert(0.72) sepia(1) saturate(5) hue-rotate(295deg);
     }
     .socials a:hover img {
       transform: scale(1.1);
-      filter: brightness(0) invert(0.9) sepia(1) saturate(5) hue-rotate(5deg) drop-shadow(0 0 6px rgba(240,201,110,0.6));
+      filter: brightness(0) invert(0.9) sepia(1) saturate(6) hue-rotate(295deg) drop-shadow(0 0 6px rgba(255, 107, 181, 0.65));
     }
     .socials .tg {
       filter: none !important;
     }
     .socials a:hover .tg {
-      filter: drop-shadow(0 0 6px rgba(240,201,110,0.5)) !important;
+      filter: drop-shadow(0 0 6px rgba(255, 107, 181, 0.55)) !important;
     }
 
     /* marquee */
     .ticker {
       overflow: hidden;
       border: 1px solid var(--border);
-      background: #0a0806;
+      background: #040c18;
       margin-bottom: 1.25rem;
       font-size: 0.78rem;
       letter-spacing: 0.12em;
-      color: var(--green-dim);
+      color: var(--pink-dim);
     }
     .ticker-track {
       display: flex;
       width: max-content;
-      animation: scroll 40s linear infinite;
+      animation: scroll 42s linear infinite;
       padding: 0.4rem 0;
     }
     .ticker-track span { padding-right: 3rem; white-space: nowrap; }
@@ -223,17 +232,17 @@
       margin-bottom: 0.75rem;
       letter-spacing: 0.04em;
     }
-    .prompt .path { color: var(--green); }
-    .prompt .cmd { color: var(--amber); }
+    .prompt .path { color: var(--pink); }
+    .prompt .cmd { color: var(--cyan); }
     .cursor {
       display: inline-block;
       width: 0.55em;
       height: 1em;
-      background: var(--green);
+      background: var(--pink);
       vertical-align: text-bottom;
       margin-left: 2px;
       animation: blink 1s step-end infinite;
-      box-shadow: 0 0 8px var(--green);
+      box-shadow: 0 0 8px var(--pink);
     }
     @keyframes blink {
       50% { opacity: 0; }
@@ -244,7 +253,7 @@
       text-align: center;
       padding: 0.75rem;
       border: 1px dashed var(--border);
-      background: #080604;
+      background: #040c18;
       margin-bottom: 1rem;
     }
     .hero-banner img {
@@ -252,7 +261,7 @@
       max-width: 720px;
       display: block;
       margin: 0 auto;
-      filter: drop-shadow(0 0 16px rgba(240,201,110,0.25));
+      filter: drop-shadow(0 0 18px rgba(255, 107, 181, 0.3));
       animation: float 5s ease-in-out infinite;
     }
     @keyframes float {
@@ -272,7 +281,7 @@
       margin-top: 0.75rem;
       padding-top: 0.55rem;
     }
-    .meta-row .live { color: var(--green); }
+    .meta-row .live { color: var(--pink); }
     .meta-row .live::before {
       content: '● ';
       animation: blink 1.2s step-end infinite;
@@ -280,20 +289,24 @@
 
     h1 {
       text-align: center;
-      color: var(--green);
+      color: var(--pink);
       font-size: clamp(1.4rem, 4vw, 2rem);
       letter-spacing: 0.22em;
       margin: 1rem 0 0.35rem;
-      text-shadow: 0 0 18px rgba(240,201,110,0.4);
+      text-shadow: 0 0 18px rgba(255, 107, 181, 0.45);
       font-weight: 700;
     }
     .tagline {
       text-align: center;
       color: var(--text);
       font-size: clamp(0.95rem, 2.5vw, 1.1rem);
-      max-width: 38rem;
+      max-width: 40rem;
       margin: 0.75rem auto 0;
-      line-height: 1.6;
+      line-height: 1.7;
+    }
+    .tagline em {
+      font-style: normal;
+      color: var(--pink-soft);
     }
     .symbol {
       text-align: center;
@@ -302,7 +315,7 @@
       font-size: 0.85rem;
       margin-top: 0.4rem;
     }
-    .symbol b { color: var(--amber); font-weight: 600; }
+    .symbol b { color: var(--cyan); font-weight: 600; }
 
     .pills {
       display: flex;
@@ -314,21 +327,21 @@
     .pill {
       border: 1px solid var(--border);
       background: var(--panel-2);
-      color: var(--green-soft);
+      color: var(--pink-soft);
       font-size: 0.7rem;
       letter-spacing: 0.14em;
       padding: 0.35rem 0.7rem;
     }
-    .pill.amber {
-      color: var(--amber);
-      border-color: rgba(232,120,48,0.4);
+    .pill.cyan {
+      color: var(--cyan);
+      border-color: rgba(78, 203, 255, 0.35);
     }
 
     /* CA */
     .ca-block {
       margin-top: 1.25rem;
       border: 1px solid var(--border);
-      background: #080604;
+      background: #040c18;
     }
     .ca-head {
       display: flex;
@@ -340,7 +353,7 @@
       letter-spacing: 0.16em;
       color: var(--muted);
     }
-    .ca-head span { color: var(--amber); }
+    .ca-head span { color: var(--cyan); }
     .ca-body {
       display: flex;
       flex-direction: column;
@@ -354,7 +367,7 @@
       flex: 1;
       font-family: var(--font);
       font-size: 0.85rem;
-      color: var(--green);
+      color: var(--pink);
       background: transparent;
       border: 1px dashed var(--border);
       padding: 0.65rem 0.75rem;
@@ -364,9 +377,9 @@
     .btn {
       font-family: var(--font);
       cursor: pointer;
-      border: 1px solid var(--green-dim);
-      background: var(--green-ghost);
-      color: var(--green);
+      border: 1px solid var(--pink-dim);
+      background: var(--pink-ghost);
+      color: var(--pink);
       letter-spacing: 0.14em;
       font-size: 0.78rem;
       font-weight: 600;
@@ -376,20 +389,20 @@
       white-space: nowrap;
     }
     .btn:hover {
-      background: var(--green);
+      background: var(--pink);
       color: var(--bg);
-      box-shadow: 0 0 18px rgba(240,201,110,0.35);
-      border-color: var(--green);
+      box-shadow: 0 0 18px rgba(255, 107, 181, 0.4);
+      border-color: var(--pink);
     }
     .btn-solid {
-      background: var(--green);
+      background: var(--pink);
       color: var(--bg);
-      border-color: var(--green);
-      box-shadow: 0 0 14px rgba(240,201,110,0.25);
+      border-color: var(--pink);
+      box-shadow: 0 0 14px rgba(255, 107, 181, 0.3);
     }
     .btn-solid:hover {
-      background: var(--green-soft);
-      border-color: var(--green-soft);
+      background: var(--pink-soft);
+      border-color: var(--pink-soft);
     }
     .btn-ghost {
       background: transparent;
@@ -397,9 +410,9 @@
       color: var(--muted);
     }
     .btn-ghost:hover {
-      color: var(--green);
-      border-color: var(--green-dim);
-      background: var(--green-ghost);
+      color: var(--pink);
+      border-color: var(--pink-dim);
+      background: var(--pink-ghost);
       box-shadow: none;
     }
 
@@ -423,16 +436,16 @@
       margin-bottom: 0.25rem;
     }
     .sec h2 {
-      color: var(--green);
+      color: var(--pink);
       font-size: 1.15rem;
       letter-spacing: 0.16em;
-      text-shadow: 0 0 10px rgba(240,201,110,0.3);
+      text-shadow: 0 0 10px rgba(255, 107, 181, 0.35);
     }
     .sec p.lead {
       color: var(--muted);
       margin-top: 0.45rem;
       font-size: 0.92rem;
-      max-width: 38rem;
+      max-width: 40rem;
     }
 
     /* grid cards as ascii panels */
@@ -456,18 +469,18 @@
       transition: border-color 0.15s, box-shadow 0.15s;
     }
     .card:hover {
-      border-color: var(--green-dim);
-      box-shadow: 0 0 20px rgba(240,201,110,0.1);
+      border-color: var(--pink-dim);
+      box-shadow: 0 0 20px rgba(255, 107, 181, 0.12);
     }
     .card pre {
-      color: var(--green-dim);
+      color: var(--pink-dim);
       font-size: 0.7rem;
       line-height: 1.2;
       margin-bottom: 0.65rem;
       overflow-x: auto;
     }
     .card h3 {
-      color: var(--green);
+      color: var(--pink);
       font-size: 0.82rem;
       letter-spacing: 0.12em;
       margin-bottom: 0.45rem;
@@ -478,13 +491,12 @@
       line-height: 1.5;
     }
     .step-num {
-      color: var(--green-ghost);
       font-size: 1.8rem;
       font-weight: 700;
       line-height: 1;
       float: right;
       margin-left: 0.5rem;
-      color: rgba(240,201,110,0.18);
+      color: rgba(255, 107, 181, 0.2);
     }
 
     /* chart */
@@ -503,7 +515,7 @@
       letter-spacing: 0.12em;
       color: var(--muted);
     }
-    .chart-bar .ok { color: var(--green); }
+    .chart-bar .ok { color: var(--pink); }
     .chart-frame {
       position: relative;
       width: 100%;
@@ -530,8 +542,8 @@
       color: inherit;
     }
     .link-card:hover {
-      border-color: var(--green-dim);
-      box-shadow: 0 0 18px rgba(240,201,110,0.12);
+      border-color: var(--pink-dim);
+      box-shadow: 0 0 18px rgba(255, 107, 181, 0.14);
       color: inherit;
       text-shadow: none;
     }
@@ -543,7 +555,7 @@
     .link-card .x-ico {
       width: 40px;
       height: 40px;
-      filter: brightness(0) invert(0.75) sepia(1) saturate(4) hue-rotate(5deg);
+      filter: brightness(0) invert(0.72) sepia(1) saturate(5) hue-rotate(295deg);
     }
     .link-card .lbl {
       font-size: 0.68rem;
@@ -551,7 +563,7 @@
       color: var(--muted);
     }
     .link-card .val {
-      color: var(--green);
+      color: var(--pink);
       font-weight: 600;
       letter-spacing: 0.08em;
       margin-top: 0.15rem;
@@ -583,20 +595,21 @@
     footer .foot-brand img {
       width: 32px;
       height: 32px;
-      filter: drop-shadow(0 0 4px rgba(240,201,110,0.4));
+      border-radius: 3px;
+      filter: drop-shadow(0 0 5px rgba(255, 107, 181, 0.45));
     }
-    footer .foot-name { color: var(--green); font-weight: 600; }
+    footer .foot-name { color: var(--pink); font-weight: 600; }
     footer .foot-links {
       display: flex;
       gap: 0.9rem;
       align-items: center;
     }
     footer .foot-links a { color: var(--muted); }
-    footer .foot-links a:hover { color: var(--green); }
+    footer .foot-links a:hover { color: var(--pink); }
     footer .foot-links img {
       width: 22px;
       height: 22px;
-      filter: brightness(0) invert(0.55) sepia(1) saturate(4) hue-rotate(5deg);
+      filter: brightness(0) invert(0.55) sepia(1) saturate(5) hue-rotate(295deg);
       vertical-align: middle;
     }
     footer .foot-links .tg { filter: none; width: 24px; height: 24px; }
@@ -609,15 +622,15 @@
       transform: translateX(-50%);
       z-index: 10000;
       display: none;
-      border: 1px solid var(--green);
-      background: var(--green);
+      border: 1px solid var(--pink);
+      background: var(--pink);
       color: var(--bg);
       font-family: var(--font);
       font-size: 0.8rem;
       font-weight: 700;
       letter-spacing: 0.16em;
       padding: 0.55rem 1rem;
-      box-shadow: 0 0 20px rgba(240,201,110,0.4);
+      box-shadow: 0 0 20px rgba(255, 107, 181, 0.45);
     }
     #toast.show { display: block; animation: toastIn 0.2s ease; }
     @keyframes toastIn {
@@ -629,8 +642,9 @@
     .term-frame {
       border: 2px solid var(--border);
       box-shadow:
-        0 0 0 1px #0a0806,
-        0 0 40px rgba(232,120,48,0.08),
+        0 0 0 1px #040c18,
+        0 0 40px rgba(255, 107, 181, 0.08),
+        0 0 60px rgba(78, 203, 255, 0.04),
         inset 0 0 60px rgba(0,0,0,0.35);
       background: var(--bg);
     }
@@ -655,7 +669,7 @@
       border-radius: 50%;
       background: var(--border);
     }
-    .term-chrome .dot.on { background: var(--green); box-shadow: 0 0 6px var(--green); }
+    .term-chrome .dot.on { background: var(--pink); box-shadow: 0 0 6px var(--pink); }
     .term-body { padding: 1rem; }
 
     .hr-ascii {
@@ -667,6 +681,23 @@
       letter-spacing: 0;
       user-select: none;
     }
+
+    /* rainbow accent bar under hero */
+    .rainbow-bar {
+      height: 4px;
+      width: 100%;
+      margin: 0.85rem 0 0;
+      background: linear-gradient(
+        90deg,
+        var(--rainbow-r),
+        var(--rainbow-o),
+        var(--rainbow-y),
+        var(--rainbow-g),
+        var(--rainbow-b),
+        var(--rainbow-p)
+      );
+      box-shadow: 0 0 12px rgba(255, 107, 181, 0.25);
+    }
   </style>
 </head>
 <body>
@@ -674,10 +705,10 @@
     <!-- sticky mini nav -->
     <div class="topbar">
       <a href="#top" class="brand">
-        <img src="logo.png" alt="febu wukong" />
+        <img src="logo.png" alt="Nyan Jimothy" />
         <div>
-          <div class="brand-name">febu wukong</div>
-          <div class="brand-sub">$febukong // SOL</div>
+          <div class="brand-name">Nyan Jimothy</div>
+          <div class="brand-sub">$NYANJIM // SOL</div>
         </div>
       </a>
       <nav class="nav">
@@ -690,13 +721,13 @@
         <a href="#troop">TROOP</a>
       </nav>
       <div class="socials">
-        <a href="https://t.me/febuwukong" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+        <a href="https://t.me/NyanJimothy" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
           <img src="tg.png" alt="TG" class="tg" />
         </a>
-        <a href="https://x.com/febuwukong" target="_blank" rel="noopener noreferrer" aria-label="X">
+        <a href="https://x.com/NyanJimothy" target="_blank" rel="noopener noreferrer" aria-label="X">
           <img src="x.png" alt="X" />
         </a>
-        <a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=8bJ2VHrshzcSsFrdQy1JRWMmyzRXSqv6JBNTo872pump" target="_blank" rel="noopener noreferrer" class="btn btn-solid" style="padding:0.4rem 0.7rem;font-size:0.7rem;">BUY</a>
+        <a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA" target="_blank" rel="noopener noreferrer" class="btn btn-solid" style="padding:0.4rem 0.7rem;font-size:0.7rem;">BUY</a>
       </div>
     </div>
 
@@ -708,67 +739,70 @@
           <span class="dot"></span>
           <span class="dot on"></span>
         </div>
-        <span>febuwukong.sys — tty1</span>
-        <span class="ok" style="color:var(--green)">ONLINE</span>
+        <span>nyanjimothy.sys — tty1</span>
+        <span class="ok" style="color:var(--pink)">ONLINE</span>
       </div>
 
       <div class="term-body">
         <!-- ticker -->
         <div class="ticker">
           <div class="ticker-track">
-            <span>>>> febu wukong >>> $febukong >>> MONKEY KING POWER >>> WILD ENERGY >>> SOLANA VIBES >>> FEARLESS MEME LEGEND >>> febu wukong >>> $febukong >>> MONKEY KING POWER >>> WILD ENERGY >>> SOLANA VIBES >>></span>
-            <span>>>> febu wukong >>> $febukong >>> MONKEY KING POWER >>> WILD ENERGY >>> SOLANA VIBES >>> FEARLESS MEME LEGEND >>> febu wukong >>> $febukong >>> MONKEY KING POWER >>> WILD ENERGY >>> SOLANA VIBES >>></span>
+            <span>>>> ANCIENT TIMES CALLED IT A MYTH >>> MODERN TIMES CALL IT A MEME >>> EVERYONE KNOWS THE NAME JIMOTHY >>> $NYANJIM >>> NYAN CAT LEGEND >>> SOLANA >>> ANCIENT TIMES CALLED IT A MYTH >>> MODERN TIMES CALL IT A MEME >>> EVERYONE KNOWS THE NAME JIMOTHY >>></span>
+            <span>>>> ANCIENT TIMES CALLED IT A MYTH >>> MODERN TIMES CALL IT A MEME >>> EVERYONE KNOWS THE NAME JIMOTHY >>> $NYANJIM >>> NYAN CAT LEGEND >>> SOLANA >>> ANCIENT TIMES CALLED IT A MYTH >>> MODERN TIMES CALL IT A MEME >>> EVERYONE KNOWS THE NAME JIMOTHY >>></span>
           </div>
         </div>
 
         <p class="prompt">
-          <span class="path">root@febukong</span>:<span style="color:var(--green-soft)">~</span>$ <span class="cmd">./boot --token febukong --mode monkeyking</span><span class="cursor"></span>
+          <span class="path">root@NYANJIM</span>:<span style="color:var(--pink-soft)">~</span>$ <span class="cmd">./boot --token NYANJIM --mode myth-meme</span><span class="cursor"></span>
         </p>
 
         <!-- big ascii title -->
         <pre class="ascii" aria-hidden="true">
  ╔══════════════════════════════════════════════════════════════╗
  ║                                                              ║
- ║  fffff eeeee bbbb  u   u     w   w u   u k  k  oooo  nnnn   ║
- ║  f     e     b   b u   u     w   w u   u k k  o    o n  n   ║
- ║  fff   eeee  bbbb  u   u     w w w u   u kk   o    o n  n   ║
- ║  f     e     b   b u   u     ww ww u   u k k  o    o n  n   ║
- ║  f     eeeee bbbb   uuu      w   w  uuu  k  k  oooo  n  n   ║
+ ║  n   n y   y  aaaa  n   n      jjjj iii m   m                ║
+ ║  nn  n  y y  a    a nn  n        j   i  mm mm                ║
+ ║  n n n   y   aaaaaa n n n        j   i  m m m                ║
+ ║  n  nn   y   a    a n  nn     j  j   i  m   m                ║
+ ║  n   n   y   a    a n   n      jj   iii m   m                ║
  ║                                                              ║
- ║              name: febu wukong                               ║
- ║            symbol: $febukong                                 ║
+ ║              name: Nyan Jimothy                              ║
+ ║            symbol: $NYANJIM                                  ║
  ║                                                              ║
- ║     [ $febukong ]  ·  monkey king  ·  solana meme legend     ║
+ ║   myth · meme · everyone knows the name jimothy              ║
  ╚══════════════════════════════════════════════════════════════╝
         </pre>
 
         <!-- banner art -->
         <div class="box" style="margin-top:1rem;">
-          <span class="box-title">[ MONKEY_KING.IMG ]</span>
+          <span class="box-title">[ JIMOTHY.IMG ]</span>
           <div class="box-inner">
             <div class="hero-banner">
-              <img src="banner.png" alt="febu wukong — monkey king banner" draggable="false" />
+              <img src="banner.png" alt="Nyan Jimothy — the name everyone knows" draggable="false" />
             </div>
+            <div class="rainbow-bar" aria-hidden="true"></div>
             <div class="meta-row">
-              <span class="live">LEGEND ONLINE</span>
+              <span class="live">MYTH ONLINE</span>
               <span>CHAIN: SOLANA</span>
-              <span>TICKER: $febukong</span>
-              <span>THEME: MONKEY KING</span>
+              <span>TICKER: $NYANJIM</span>
+              <span>STATUS: MEME</span>
             </div>
           </div>
         </div>
 
-        <h1>febu wukong</h1>
-        <p class="symbol">symbol <b>$febukong</b></p>
+        <h1>Nyan Jimothy</h1>
+        <p class="symbol">symbol <b>$NYANJIM</b></p>
         <p class="tagline">
-          febu wukong is a fearless meme legend, blending monkey king power, wild energy, and unstoppable Solana vibes.
+          Ancient times would call it a <em>myth</em>.
+          Modern times call it a <em>meme</em>.
+          Everyone knows the name <em>Jimothy</em>.
         </p>
 
         <div class="pills">
-          <span class="pill">MONKEY :: KING</span>
-          <span class="pill amber">MEME :: LEGEND</span>
-          <span class="pill">CHAIN :: SOLANA</span>
-          <span class="pill amber">VIBES :: WILD</span>
+          <span class="pill">MYTH :: ANCIENT</span>
+          <span class="pill cyan">MEME :: MODERN</span>
+          <span class="pill">NAME :: JIMOTHY</span>
+          <span class="pill cyan">CHAIN :: SOLANA</span>
         </div>
 
         <!-- CA -->
@@ -778,16 +812,16 @@
             <span>ONLY TRADE THE REAL CA</span>
           </div>
           <div class="ca-body">
-            <code id="ca-text">8bJ2VHrshzcSsFrdQy1JRWMmyzRXSqv6JBNTo872pump</code>
+            <code id="ca-text">TBA</code>
             <button type="button" class="btn btn-solid" id="copy-ca">[ COPY CA ]</button>
           </div>
         </div>
 
         <div class="cta-row">
-          <a class="btn btn-solid" href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=8bJ2VHrshzcSsFrdQy1JRWMmyzRXSqv6JBNTo872pump" target="_blank" rel="noopener noreferrer">
-            &gt; BUY $febukong
+          <a class="btn btn-solid" href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA" target="_blank" rel="noopener noreferrer">
+            &gt; BUY $NYANJIM
           </a>
-          <a class="btn btn-ghost" href="https://dexscreener.com/solana/8bJ2VHrshzcSsFrdQy1JRWMmyzRXSqv6JBNTo872pump" target="_blank" rel="noopener noreferrer">
+          <a class="btn btn-ghost" href="https://dexscreener.com/solana/TBA" target="_blank" rel="noopener noreferrer">
             &gt; WATCH CHART
           </a>
         </div>
@@ -796,46 +830,47 @@
 
         <!-- ABOUT -->
         <section class="sec" id="about">
-          <p class="sec-label">01 // LEGEND</p>
-          <h2>&gt; WHAT IS febu wukong?</h2>
+          <p class="sec-label">01 // LORE</p>
+          <h2>&gt; WHAT IS NYAN JIMOTHY?</h2>
           <p class="lead">
-            febu wukong is a fearless meme legend, blending monkey king power, wild energy, and unstoppable Solana vibes.
-            Ticker <b style="color:var(--amber)">$febukong</b> — staff raised, headband tight, chaos unlocked.
+            Ancient times would call it a myth. Modern times call it a meme.
+            Everyone knows the name <b style="color:var(--pink)">Jimothy</b> —
+            the rainbow raccoon legend flying through Solana as <b style="color:var(--cyan)">$NYANJIM</b>.
           </p>
         </section>
 
         <div class="grid cols-4">
           <article class="card">
-            <pre>  ( o.o )
-   /|──|\
-    /  \
-  KING</pre>
-            <h3>MONKEY KING</h3>
-            <p>Classic Wukong swagger. Fearless, chaotic, and born to break every candle ceiling.</p>
+            <pre>  ~~~~~
+  MYTH
+  ~~~~~
+  OLD</pre>
+            <h3>ANCIENT MYTH</h3>
+            <p>Before charts and tickers, stories of Jimothy spread like campfire lore — a name you already knew.</p>
           </article>
           <article class="card">
             <pre>  ⚡ MEME
-  ⚡ POWER
   ⚡ MODE
+  ⚡ NOW
   ON</pre>
-            <h3>FEARLESS MEME</h3>
-            <p>A legend that does not flinch. Pure meme force with monkey king attitude.</p>
+            <h3>MODERN MEME</h3>
+            <p>Same legend, new format. Screens, chains, and chaos — Jimothy is the meme everyone recognizes.</p>
           </article>
           <article class="card">
-            <pre>  ~~~
-  WILD
-  ~~~
-  ENERGY</pre>
-            <h3>WILD ENERGY</h3>
-            <p>Unfiltered hype. Loud troop. Infinite staff spin energy on every pump.</p>
+            <pre>  ( o.o )
+   /|──|\
+    /  \
+  JIM</pre>
+            <h3>THE NAME</h3>
+            <p>Jimothy. Say it once and it sticks. The name is the brand, the lore, and the signal.</p>
           </article>
           <article class="card">
             <pre>  ╱||╲
  ╱ || ╲
   SOL
   ~~~</pre>
-            <h3>SOLANA VIBES</h3>
-            <p>Built for Solana speed. Fast swaps, loud culture, unstoppable $febukong signal.</p>
+            <h3>SOLANA FLIGHT</h3>
+            <p>Rainbow trail on Solana rails. Fast swaps, loud culture, unstoppable $NYANJIM energy.</p>
           </article>
         </div>
 
@@ -844,8 +879,8 @@
         <!-- HOW TO BUY -->
         <section class="sec" id="buy">
           <p class="sec-label">02 // QUEST</p>
-          <h2>&gt; HOW TO BUY $febukong</h2>
-          <p class="lead">Four steps. Claim your staff. Join the monkey king legend on Solana.</p>
+          <h2>&gt; HOW TO BUY $NYANJIM</h2>
+          <p class="lead">Four steps. Join the myth. Own the meme. Everyone knows the name Jimothy.</p>
         </section>
 
         <div class="grid cols-4">
@@ -853,31 +888,31 @@
             <span class="step-num">01</span>
             <pre>$ wallet init</pre>
             <h3>GET A WALLET</h3>
-            <p>Install Phantom or Solflare. Create or import. Guard the seed like the king's peaches.</p>
+            <p>Install Phantom or Solflare. Create or import. Guard the seed like sacred lore.</p>
           </article>
           <article class="card">
             <span class="step-num">02</span>
             <pre>$ sol deposit</pre>
             <h3>ADD SOL</h3>
-            <p>Buy SOL, send it to your wallet. Leave gas for fees — fuel for the quest.</p>
+            <p>Buy SOL, send it to your wallet. Leave gas for fees — fuel for the flight.</p>
           </article>
           <article class="card">
             <span class="step-num">03</span>
             <pre>$ ca copy</pre>
             <h3>COPY CA</h3>
-            <p>Hit COPY CA. Paste the real contract — only trade verified $febukong.</p>
+            <p>Hit COPY CA. Paste the real contract — only trade verified $NYANJIM.</p>
           </article>
           <article class="card">
             <span class="step-num">04</span>
-            <pre>$ swap --king</pre>
+            <pre>$ swap --myth</pre>
             <h3>SWAP → ASCEND</h3>
-            <p>Open BUY, connect wallet, swap SOL for $febukong. Confirm. Ride the legend.</p>
+            <p>Open BUY, connect wallet, swap SOL for $NYANJIM. Confirm. Ride the rainbow.</p>
           </article>
         </div>
 
         <div class="cta-row">
-          <a class="btn btn-solid" href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=8bJ2VHrshzcSsFrdQy1JRWMmyzRXSqv6JBNTo872pump" target="_blank" rel="noopener noreferrer">
-            &gt; BUY $febukong
+          <a class="btn btn-solid" href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA" target="_blank" rel="noopener noreferrer">
+            &gt; BUY $NYANJIM
           </a>
           <button type="button" class="btn btn-ghost" onclick="document.getElementById('copy-ca').click()">
             &gt; COPY CA
@@ -888,26 +923,26 @@
 
         <!-- CHART -->
         <section class="sec" id="chart">
-          <p class="sec-label">03 // BATTLEFIELD</p>
+          <p class="sec-label">03 // SIGNAL</p>
           <h2>&gt; WATCH THE CHART</h2>
-          <p class="lead">Live $febukong action. Monkey king candles. Fearless Solana energy.</p>
+          <p class="lead">Live $NYANJIM action. Myth on the move. Meme on Solana.</p>
         </section>
 
         <div style="display:flex;justify-content:flex-end;margin-bottom:0.65rem;">
-          <a class="btn btn-ghost" href="https://dexscreener.com/solana/8bJ2VHrshzcSsFrdQy1JRWMmyzRXSqv6JBNTo872pump" target="_blank" rel="noopener noreferrer" style="font-size:0.72rem;padding:0.45rem 0.8rem;">
+          <a class="btn btn-ghost" href="https://dexscreener.com/solana/TBA" target="_blank" rel="noopener noreferrer" style="font-size:0.72rem;padding:0.45rem 0.8rem;">
             OPEN FULL CHART ^
           </a>
         </div>
 
         <div class="chart-shell">
           <div class="chart-bar">
-            <span class="ok">[ dexscreener · $febukong ]</span>
+            <span class="ok">[ dexscreener · $NYANJIM ]</span>
             <span>● EMBED</span>
           </div>
           <div class="chart-frame">
             <iframe
-              title="febu wukong Dexscreener chart"
-              src="https://dexscreener.com/solana/8bJ2VHrshzcSsFrdQy1JRWMmyzRXSqv6JBNTo872pump?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
+              title="Nyan Jimothy Dexscreener chart"
+              src="https://dexscreener.com/solana/TBA?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
               allow="clipboard-write"
               loading="lazy"
             ></iframe>
@@ -920,69 +955,71 @@
         <section class="sec" id="troop">
           <p class="sec-label">04 // TROOP</p>
           <h2>&gt; JOIN THE TROOP</h2>
-          <p class="lead">Monkey king power. Wild energy. Unstoppable Solana vibes. Ride $febukong with the troop.</p>
+          <p class="lead">Ancient myth. Modern meme. Everyone knows the name Jimothy. Ride $NYANJIM with the troop.</p>
         </section>
 
         <div class="grid cols-2">
-          <a class="link-card" href="https://t.me/febuwukong" target="_blank" rel="noopener noreferrer">
+          <a class="link-card" href="https://t.me/NyanJimothy" target="_blank" rel="noopener noreferrer">
             <img src="tg.png" alt="Telegram" />
             <div>
               <div class="lbl">TELEGRAM</div>
-              <div class="val">t.me/febuwukong</div>
-              <div class="hint">where the troop gathers →</div>
+              <div class="val">t.me/NyanJimothy</div>
+              <div class="hint">where the myth gathers →</div>
             </div>
           </a>
-          <a class="link-card" href="https://x.com/febuwukong" target="_blank" rel="noopener noreferrer">
+          <a class="link-card" href="https://x.com/NyanJimothy" target="_blank" rel="noopener noreferrer">
             <img src="x.png" alt="X" class="x-ico" />
             <div>
               <div class="lbl">X / TWITTER</div>
-              <div class="val">@febuwukong</div>
-              <div class="hint">charts · lore · chaos →</div>
+              <div class="val">@NyanJimothy</div>
+              <div class="hint">charts · lore · memes →</div>
             </div>
           </a>
         </div>
 
         <pre class="ascii" style="margin-top:1.5rem;text-align:left;">
 ┌──────────────────────────────────────────────┐
-│  febu wukong // $febukong                    │
-│  name: febu wukong · symbol: $febukong       │
-│  fearless meme legend · monkey king power    │
+│  Nyan Jimothy // $NYANJIM                    │
+│  name: Nyan Jimothy · symbol: $NYANJIM       │
+│                                              │
+│  ancient times would call it a myth          │
+│  modern times call it a meme                 │
+│  everyone knows the name jimothy             │
 │                                              │
 │  $ ./status                                  │
-│  > theme: MONKEY KING                        │
-│  > energy: WILD                              │
-│  > vibes: UNSTOPPABLE SOLANA                 │
+│  > era: MYTH → MEME                         │
+│  > name: JIMOTHY                             │
 │  > chain: SOLANA                             │
 └──────────────────────────────────────────────┘
         </pre>
 
         <p class="prompt" style="margin-top:1rem;">
-          <span class="path">root@febukong</span>:<span style="color:var(--green-soft)">~</span>$ <span class="cmd">echo "NFA · DYOR · STAFF UP"</span><span class="cursor"></span>
+          <span class="path">root@NYANJIM</span>:<span style="color:var(--pink-soft)">~</span>$ <span class="cmd">echo "NFA · DYOR · KNOW THE NAME"</span><span class="cursor"></span>
         </p>
       </div>
     </div>
 
     <footer>
       <div class="foot-brand">
-        <img src="logo.png" alt="febu wukong" />
+        <img src="logo.png" alt="Nyan Jimothy" />
         <div>
-          <div class="foot-name">febu wukong · $febukong</div>
-          <div>monkey king · solana legend</div>
+          <div class="foot-name">Nyan Jimothy · $NYANJIM</div>
+          <div>myth · meme · jimothy</div>
         </div>
       </div>
       <div class="foot-links">
-        <a href="https://t.me/febuwukong" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+        <a href="https://t.me/NyanJimothy" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
           <img src="tg.png" alt="TG" class="tg" />
         </a>
-        <a href="https://x.com/febuwukong" target="_blank" rel="noopener noreferrer" aria-label="X">
+        <a href="https://x.com/NyanJimothy" target="_blank" rel="noopener noreferrer" aria-label="X">
           <img src="x.png" alt="X" />
         </a>
-        <a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=8bJ2VHrshzcSsFrdQy1JRWMmyzRXSqv6JBNTo872pump" target="_blank" rel="noopener noreferrer">BUY</a>
-        <a href="https://dexscreener.com/solana/8bJ2VHrshzcSsFrdQy1JRWMmyzRXSqv6JBNTo872pump" target="_blank" rel="noopener noreferrer">CHART</a>
+        <a href="https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=TBA" target="_blank" rel="noopener noreferrer">BUY</a>
+        <a href="https://dexscreener.com/solana/TBA" target="_blank" rel="noopener noreferrer">CHART</a>
       </div>
       <div style="text-align:right;">
-        © 2026 febu wukong · NFA · DYOR<br />
-        <span style="color:var(--green-dim)">// $febukong · monkey king · sol</span>
+        © 2026 Nyan Jimothy · NFA · DYOR<br />
+        <span style="color:var(--pink-dim)">// $NYANJIM · everyone knows the name</span>
       </div>
     </footer>
   </div>
@@ -990,7 +1027,7 @@
   <div id="toast">CA COPIED *</div>
 
   <script>
-    const CA = '8bJ2VHrshzcSsFrdQy1JRWMmyzRXSqv6JBNTo872pump';
+    const CA = 'TBA';
     const caText = document.getElementById('ca-text');
     const copyBtn = document.getElementById('copy-ca');
     const toast = document.getElementById('toast');
